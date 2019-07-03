@@ -1,0 +1,22 @@
+{
+  "name": "node_cmd_app",
+  "version": "1.0.0",
+  "description": "A base for quickly making a command-line based app in Node.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevdudeSami/node_cmd_app.git"
+  },
+  "author": "Youssef Moawad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevdudeSami/node_cmd_app/issues"
+  },
+  "homepage": "https://github.com/DevdudeSami/node_cmd_app#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
+}
