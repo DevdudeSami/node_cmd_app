@@ -4,6 +4,7 @@ class CMDApp {
 	commands = {}
 	quitCommands = ["q", "quit"]
 	help = {}
+	prompt = ">> "
 
 	setCommands(commands) {
 		this.commands = commands
@@ -17,9 +18,13 @@ class CMDApp {
 		this.help = help
 	}
 
+	setPrompt(prompt) {
+		this.prompt = prompt
+	}
+
 	start() {
 		while(true) {
-			let command = rl.question(">> ").split(' ')
+			let command = rl.question(this.prompt).split(' ')
 			if(command[0] in this.commands) {
 				this.commands[command[0]](command.slice(1))
 			}

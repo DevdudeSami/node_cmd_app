@@ -28,4 +28,5 @@ function gF(args) {
 const app = new CMDApp()
 app.setCommands(commands)
 app.setHelp(help)
+app.setPrompt("> ")
 app.start()
