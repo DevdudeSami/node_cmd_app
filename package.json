@@ -1,6 +1,6 @@
 {
   "name": "node_cmd_app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A base for quickly making a command-line based app in Node.js.",
   "main": "index.js",
   "scripts": {
