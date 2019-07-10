@@ -6,6 +6,11 @@ const commands = {
 	g: gF
 }
 
+const minArgs = {
+	t: 3,
+	c: 2,
+}
+
 const help = {
 	t: "The t command",
 	c: "The c command",
@@ -27,6 +32,7 @@ function gF(args) {
 
 const app = new CMDApp()
 app.setCommands(commands)
+app.setMinimumArgs(minArgs)
 app.setHelp(help)
 app.setPrompt("> ")
 app.start()
